@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,38 @@
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #aad2e6, #c5e6a6); /* Softer gradient color */
+            background: linear-gradient(to bottom right, #aad2e6, #c5e6a6);
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #fff; /* Set text color to white */
-            font-family: 'DiatypeRegular', sans-serif; /* Set font to Diatype Regular */
+            color: #fff;
+            font-family: 'DiatypeRegular', sans-serif;
         }
 
         h1 {
             margin-top: 20px;
             margin-bottom: 20px;
             text-align: center;
-            color: #000; /* Set header text color to black */
+            color: #000;
             text-decoration: none;
         }
 
         a {
-            color: #000; /* Set hyperlink text color to black */
-            text-decoration: none; /* Remove underline from hyperlink */
+            color: #000;
+            text-decoration: none;
         }
 
         #videos-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Center videos on smaller screens */
+            justify-content: center;
             max-width: 1200px;
             width: 100%;
             margin-top: 20px;
         }
 
         .video {
-            width: calc(25% - 20px); /* Adjust the width and padding for two videos per row on smaller screens */
+            width: calc(25% - 20px);
             margin: 10px;
             position: relative;
         }
@@ -51,134 +52,168 @@
 
         @media (min-width: 768px) {
             .video {
-                width: calc(25% - 20px); /* Adjust the width and padding for 4 videos per row on larger screens */
+                width: calc(25% - 20px);
             }
         }
     </style>
 </head>
+
 <body>
 
     <h1><a href="https://www.youtube.com/@Margaritaville39" target="_blank" rel="noopener noreferrer">Margaritaville39.com</a></h1>
 
     <div id="videos-container">
         <!-- Video 1 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/z6CcY9eoEVc?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player1"></div>
         <!-- Video 2 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dki4_ctVxCM?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player2"></div>
         <!-- Video 3 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/fvcAUsst39Q?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="player3"></div>
         <!-- Video 4 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SZCZ7685TXg?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player4"></div>
         <!-- Video 5 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/O8LvmTOKWdk?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player5"></div>
         <!-- Video 6 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/iRV1faoJLks?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="player6"></div>
         <!-- Video 7 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/9Xvvmnbr4og?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player7"></div>
         <!-- Video 8 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/BlM-qoVT-uk?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player8"></div>
         <!-- Video 9 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/rke_L2beCYg?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="player9"></div>
         <!-- Video 10 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/6vUwUyIlHWM?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player10"></div>
         <!-- Video 11 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tWdou9kUVqk?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player11"></div>
         <!-- Video 12 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3CzYD6CnRf0?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="player12"></div>
         <!-- Video 13 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/J0PctOLbGqI?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player13"></div>
         <!-- Video 14 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SJcaqJFaHgA?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player14"></div>
         <!-- Video 15 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Wj2h3qDpmT8?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="player15"></div>
         <!-- Video 16 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/WLT2Vt109RE?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player16"></div>
         <!-- Video 17 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AYcxOQvKNP8?&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="video" id="player17"></div>
     </div>
 
     <script>
-        // Load the YouTube IFrame Player API code asynchronously
+        // Load the YouTube IFrame Player API asynchronously
         var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
+        tag.src = 'https://www.youtube.com/iframe_api';
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        // Create placeholder objects for the players
-        var players = {};
-
-        // Function to create the YouTube players
+        // Create YouTube players after the API code downloads
+        var players = [];
         function onYouTubeIframeAPIReady() {
-            players['video1'] = new YT.Player('video1', {
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-            players['video2'] = new YT.Player('video2', {
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-            players['video3'] = new YT.Player('video3', {
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-            players['video4'] = new YT.Player('video4', {
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-            // Add more players as needed
-        }
-
-        // Function to autoplay the video when the player is ready
-        function onPlayerReady(event) {
-            event.target.playVideo();
+            players.push(new YT.Player('player1', {
+                height: '315',
+                width: '100%',
+                videoId: 'z6CcY9eoEVc',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player2', {
+                height: '315',
+                width: '100%',
+                videoId: 'Dki4_ctVxCM',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player3', {
+                height: '315',
+                width: '100%',
+                videoId: 'fvcAUsst39Q',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player4', {
+                height: '315',
+                width: '100%',
+                videoId: 'SZCZ7685TXg',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player5', {
+                height: '315',
+                width: '100%',
+                videoId: 'O8LvmTOKWdk',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player6', {
+                height: '315',
+                width: '100%',
+                videoId: 'iRV1faoJLks',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player7', {
+                height: '315',
+                width: '100%',
+                videoId: '9Xvvmnbr4og',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player8', {
+                height: '315',
+                width: '100%',
+                videoId: 'BlM-qoVT-uk',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player9', {
+                height: '315',
+                width: '100%',
+                videoId: 'rke_L2beCYg',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player10', {
+                height: '315',
+                width: '100%',
+                videoId: '6vUwUyIlHWM',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player11', {
+                height: '315',
+                width: '100%',
+                videoId: 'tWdou9kUVqk',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player12', {
+                height: '315',
+                width: '100%',
+                videoId: '3CzYD6CnRf0',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player13', {
+                height: '315',
+                width: '100%',
+                videoId: 'J0PctOLbGqI',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player14', {
+                height: '315',
+                width: '100%',
+                videoId: 'SJcaqJFaHgA',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player15', {
+                height: '315',
+                width: '100%',
+                videoId: 'Wj2h3qDpmT8',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player16', {
+                height: '315',
+                width: '100%',
+                videoId: 'WLT2Vt109RE',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
+            players.push(new YT.Player('player17', {
+                height: '315',
+                width: '100%',
+                videoId: 'AYcxOQvKNP8',
+                playerVars: { 'autoplay': 1, 'controls': 1 }
+            }));
         }
     </script>
 
 </body>
 
-</html>
-</body>
 </html>
