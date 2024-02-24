@@ -56,79 +56,97 @@
 
     <div id="videos-container">
         <!-- Video 1 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/z6CcY9eoEVc?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video1"></div>
         <!-- Video 2 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Dki4_ctVxCM?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video2"></div>
         <!-- Video 3 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/fvcAUsst39Q?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="video3"></div>
         <!-- Video 4 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SZCZ7685TXg?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video4"></div>
         <!-- Video 5 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/O8LvmTOKWdk?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video5"></div>
         <!-- Video 6 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/iRV1faoJLks?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="video6"></div>
         <!-- Video 7 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/9Xvvmnbr4og?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video7"></div>
         <!-- Video 8 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/BlM-qoVT-uk?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video8"></div>
         <!-- Video 9 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/rke_L2beCYg?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="video9"></div>
         <!-- Video 10 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/6vUwUyIlHWM?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video10"></div>
         <!-- Video 11 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tWdou9kUVqk?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video11"></div>
         <!-- Video 12 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3CzYD6CnRf0?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="video12"></div>
         <!-- Video 13 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/J0PctOLbGqI?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video13"></div>
         <!-- Video 14 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/SJcaqJFaHgA?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video14"></div>
         <!-- Video 15 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Wj2h3qDpmT8?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
-        <!-- Continue adding videos as needed -->
+        <div class="video" id="video15"></div>
         <!-- Video 16 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/WLT2Vt109RE?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video16"></div>
         <!-- Video 17 -->
-        <div class="video">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AYcxOQvKNP8?autoplay=1&mute=1" frameborder="0" allowfullscreen controls></iframe>
-        </div>
+        <div class="video" id="video17"></div>
     </div>
+
+    <script>
+        // Load the YouTube API script asynchronously
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Array of video IDs
+        var videoIds = [
+            "z6CcY9eoEVc",
+            "Dki4_ctVxCM",
+            "fvcAUsst39Q",
+            "SZCZ7685TXg",
+            "O8LvmTOKWdk",
+            "iRV1faoJLks",
+            "9Xvvmnbr4og",
+            "BlM-qoVT-uk",
+            "rke_L2beCYg",
+            "6vUwUyIlHWM",
+            "tWdou9kUVqk",
+            "3CzYD6CnRf0",
+            "J0PctOLbGqI",
+            "SJcaqJFaHgA",
+            "Wj2h3qDpmT8",
+            "WLT2Vt109RE",
+            "AYcxOQvKNP8"
+        ];
+
+        // Function to create a YouTube player for each video
+        function onYouTubeIframeAPIReady() {
+            for (var i = 0; i < videoIds.length; i++) {
+                createPlayer(videoIds[i], 'video' + (i + 1));
+            }
+        }
+
+        // Function to create a YouTube player
+        function createPlayer(videoId, elementId) {
+            new YT.Player(elementId, {
+                height: '315',
+                width: '100%',
+                videoId: videoId,
+                playerVars: {
+                    'autoplay': 1,
+                    'controls': 1,
+                    'showinfo': 0,
+                    'rel': 0,
+                    'modestbranding': 1,
+                    'iv_load_policy': 3,
+                    'disablekb': 1,
+                    'loop': 1,
+                    'playlist': videoId,
+                    'mute': 1
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
