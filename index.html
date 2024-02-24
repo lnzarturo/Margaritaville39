@@ -136,5 +136,49 @@
         </div>
     </div>
 
+    <script>
+        // Load the YouTube IFrame Player API code asynchronously
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Create placeholder objects for the players
+        var players = {};
+
+        // Function to create the YouTube players
+        function onYouTubeIframeAPIReady() {
+            players['video1'] = new YT.Player('video1', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+            players['video2'] = new YT.Player('video2', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+            players['video3'] = new YT.Player('video3', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+            players['video4'] = new YT.Player('video4', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+            // Add more players as needed
+        }
+
+        // Function to autoplay the video when the player is ready
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+    </script>
+
+</body>
+
+</html>
 </body>
 </html>
