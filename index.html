@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margaritaville39.com</title>
- <style>
+  <style>
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom right, #aad2e6, #c5e6a6); /* Softer gradient color */
-            color: #fff; /* Set text color to white */
-            font-family: 'DiatypeRegular', sans-serif; /* Set font to Diatype Regular */
+            background: linear-gradient(to bottom right, #aad2e6, #c5e6a6);
+            color: #fff;
+            font-family: 'DiatypeRegular', sans-serif;
         }
 
         h1 {
             margin-top: 20px;
             margin-bottom: 20px;
             text-align: center;
-            color: #000; /* Set header text color to black */
+            color: #000;
             text-decoration: none;
         }
 
         a {
-            color: #000; /* Set hyperlink text color to black */
-            text-decoration: none; /* Remove underline from hyperlink */
+            color: #000;
+            text-decoration: none;
         }
 
         #videos-container {
@@ -32,12 +32,12 @@
             justify-content: space-between;
             max-width: 100%;
             margin-top: 20px;
-            padding: 2vw; /* Use viewport width for padding to make it responsive */
-            box-sizing: border-box; /* Include padding in the element's total width and height */
+            padding: 2vw;
+            box-sizing: border-box;
         }
 
         .video {
-            width: calc(25% - 2vw); /* Adjust the width for four videos per row */
+            width: calc(25% - 2vw);
             margin: 2vw;
             position: relative;
         }
@@ -47,17 +47,24 @@
             height: 100%;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             .video {
-                width: calc(50% - 4vw); /* Adjust width for two videos per row on smaller screens */
-                margin: 4vw;
+                width: calc(33.3333% - 2vw);
+                margin: 2vw;
             }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 900px) {
             .video {
-                width: calc(100% - 4vw); /* Adjust width for one video per row on even smaller screens */
-                margin: 4vw;
+                width: calc(50% - 2vw);
+                margin: 2vw;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .video {
+                width: calc(100% - 2vw);
+                margin: 2vw;
             }
         }
     </style>
