@@ -32,19 +32,30 @@
             justify-content: space-between;
             max-width: 100%;
             margin-top: 20px;
-            padding: 20px; /* Add padding to create space around videos */
+            padding: 2vw; /* Use viewport width for padding to make it responsive */
             box-sizing: border-box; /* Include padding in the element's total width and height */
         }
 
         .video {
-            width: calc(25% - 20px); /* Adjust the width and padding for four videos per row */
-            margin: 12px;
+            width: calc(25% - 2vw); /* Adjust the width for four videos per row */
+            margin: 2vw;
             position: relative;
         }
 
         .video iframe {
             width: 100%;
             height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            #videos-container {
+                padding: 5px; /* Adjust padding for smaller screens */
+            }
+
+            .video {
+                width: calc(50% - 10px); /* Adjust width for two videos per row on smaller screens */
+                margin: 5px;
+            }
         }
     </style>
 </head>
